@@ -16,5 +16,37 @@ namespace ProjectA
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        
+
+        private void tickdol(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void tickgora(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

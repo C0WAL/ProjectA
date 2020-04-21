@@ -11,10 +11,17 @@ using System.Windows.Forms;
 namespace ProjectA
 {
     public partial class Form1 : Form
-    {
+    {   SpaceLogic mySpaceLogic;
         public Form1()
         {
             InitializeComponent();
+            mySpaceLogic = new SpaceLogic();
+            mySpaceLogic.SpaceMoved += mySpaceLogic_SpaceMoved;
+        }
+
+        private void mySpaceLogic_SpaceMoved()
+        {
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -44,9 +51,6 @@ namespace ProjectA
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

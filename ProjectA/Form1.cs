@@ -64,9 +64,8 @@ namespace ProjectA
                 ruszPrawo = false;
             }
 
-          
 
-            else if(e.KeyCode == Keys.Space)
+            else if (e.KeyCode == Keys.Space)
 
             {
                 Strzal = false;
@@ -105,9 +104,9 @@ namespace ProjectA
         private void SprawdzWygrana()
         {
             int licznik = 0;
-            foreach(Control c in this.Controls)
+            foreach (Control c in this.Controls)
             {
-                if (c is PictureBox && c.Name = "Wrog") licznik++;
+                if (c is PictureBox && c.Name = "Obcy") licznik++;
             }
 
             if (licznik == 0) Wygrales();
@@ -118,9 +117,9 @@ namespace ProjectA
         {
             gra = false;
 
-            foreach(Control c in this.Controls)
+            foreach (Control c in this.Controls)
             {
-                if(c is Label && c.Name ="Koniec")
+                if (c is Label && c.Name = "Koniec")
                 {
                     Label lbl = (Label)c;
                     lbl.Text = "Wygrales !" + "\n"
@@ -138,9 +137,9 @@ namespace ProjectA
         {
             timer1.Stop(); timer2.Stop(); timer3.Stop(); timer4.Stop(); timer5.Stop(); Observer.Stop();
 
-            foreach(Control c in this.Controls)
+            foreach (Control c in this.Controls)
             {
-                if(c is Label && c.Name == "Finish")
+                if (c is Label && c.Name == "Finish")
                 {
                     Label lbl = (Label)c;
                     lbl.Text = "Przegrales! ";
@@ -153,7 +152,23 @@ namespace ProjectA
             }
         }
 
-           
+        private void WstawObcego(PictureBox a)
+        {
+            foreach(Control c in this.Controls)
+            {
+                if(c is PictureBox && c.Name == "Obcy")
+                {
+                    PictureBox obcy = (PictureBox)c;
+                    przeciwnik.Add(obcy);
+                }
+            }
+        }
 
-       
+        private bool Dotkniety(PictureBox a)
+        { 
+            return a.Location.X <= || a.Location.X >= limit;
+        }
+
+
+    }
 }

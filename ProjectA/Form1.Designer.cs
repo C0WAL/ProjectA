@@ -99,13 +99,10 @@
 
         }
 
-        private void Gracz_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
     }
-
+       
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
@@ -117,6 +114,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox Zycie1;
         private System.Windows.Forms.PictureBox Zycie2;
-    }
     
 }

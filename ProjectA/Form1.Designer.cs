@@ -91,7 +91,6 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "wrog";
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -225,19 +224,19 @@
             // łatwaToolStripMenuItem
             // 
             this.łatwaToolStripMenuItem.Name = "łatwaToolStripMenuItem";
-            this.łatwaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.łatwaToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.łatwaToolStripMenuItem.Text = "Łatwa";
             // 
             // średniaToolStripMenuItem
             // 
             this.średniaToolStripMenuItem.Name = "średniaToolStripMenuItem";
-            this.średniaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.średniaToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.średniaToolStripMenuItem.Text = "Średnia";
             // 
             // trudnaToolStripMenuItem
             // 
             this.trudnaToolStripMenuItem.Name = "trudnaToolStripMenuItem";
-            this.trudnaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trudnaToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.trudnaToolStripMenuItem.Text = "Trudna";
             // 
             // Form1
@@ -264,9 +263,8 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tickdol);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tickgora);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pressed);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.NoPressed);
             ((System.ComponentModel.ISupportInitialize)(this.wrog)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gracz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

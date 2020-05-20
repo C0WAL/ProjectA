@@ -64,7 +64,7 @@ namespace ProjectA
                 ruszPrawo = false;
             }
 
-            else if (e.KeyCode = Keys.Space)
+          
 
             else if(e.KeyCode == Keys.Space)
 
